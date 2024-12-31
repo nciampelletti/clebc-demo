@@ -15,7 +15,6 @@ import Course3 from './images/course-3.avif'
 import Practice1 from './images/practice-1.avif'
 import Practice2 from './images/practice-2.avif'
 import Practice3 from './images/practice-3.avif'
-import Practice4 from './images/practice-4.avif'
 
 //image, name, icon, description
 export const practice = [
