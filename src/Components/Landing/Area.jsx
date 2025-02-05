@@ -6,7 +6,7 @@ const Area = ({ icon, title, text }) => {
       <span className="area-icon">
         <FontAwesomeIcon icon={icon} />
       </span>
-      <h4 className="area-title">{title}</h4>
+      <h4>{title}</h4>
       <p className="area-text">{text}</p>
     </article>
   )

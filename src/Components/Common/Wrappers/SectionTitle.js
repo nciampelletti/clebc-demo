@@ -9,10 +9,10 @@ const Wrapper = styled.div`
     letter-spacing: 0.2rem;
   }
 
-  .title-sub {
+  /* .title-sub {
     font-family: var(--ff-secondary);
     color: var(--clr-primary);
-  }
+  } */
 `
 
 export default Wrapper

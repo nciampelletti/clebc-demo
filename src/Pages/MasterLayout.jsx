@@ -1,5 +1,5 @@
 import { Outlet, useNavigation } from 'react-router-dom'
-import { Navbar, Loading } from '../Components/Common'
+import { Navbar, Loading, Sidebar, Submenu } from '../Components/Common'
 
 const MasterLayout = () => {
   const navigation = useNavigation()
@@ -8,6 +8,8 @@ const MasterLayout = () => {
   return (
     <main>
       <Navbar />
+      <Sidebar />
+      <Submenu />
       {isPageLoading ? (
         <Loading />
       ) : (
