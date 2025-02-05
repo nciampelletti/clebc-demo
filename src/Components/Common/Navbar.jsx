@@ -7,9 +7,9 @@ import { useGlobalContext } from '../../Context'
 import NavLinks from './NavLinks'
 import styled from 'styled-components'
 
-const toggleLinks = () => {
-  //setShowLinks(!showLinks)
-}
+// const toggleLinks = () => {
+//   //setShowLinks(!showLinks)
+// }
 
 const Navbar = () => {
   const { openSidebar, setPageId } = useGlobalContext()
