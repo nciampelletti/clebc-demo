@@ -6,15 +6,14 @@ const Header = () => {
   return (
     <Wrapper>
       <div className="banner">
-        <h2>The Continuing Legal Education Society of British Columbia</h2>
-        <h4 className="banner-text">
-          is the most respected and most often relied upon source of continuing
-          professional education for British Columbia lawyers and their support
-          staff.
-        </h4>
-        {/* <a href="products.html" className="btn banner-btn">
-          explore customers
-        </a> */}
+        <div class="banner-text">
+          <h2>The Continuing Legal Education Society of British Columbia</h2>
+          <h4 className="banner-text">
+            is the most respected and most often relied upon source of
+            continuing professional education for British Columbia lawyers and
+            their support staff.
+          </h4>
+        </div>
         <Link to="/customer" className="btn banner-btn">
           explore
         </Link>
@@ -30,6 +29,38 @@ const Wrapper = styled.section`
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
     url(${ImageBgr}) center/cover no-repeat fixed;
   position: relative;
+
+  .banner-text {
+    animation: slideFromTop 5s ease-in-out 1;
+  }
+
+  .banner-btn {
+    animation: slideFromBottom 5s ease-in-out 1;
+  }
+
+  /* animations */
+  @keyframes slideFromTop {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideFromBottom {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 
   .banner {
     text-align: center;
